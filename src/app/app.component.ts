@@ -20,4 +20,9 @@ export class AppComponent {
     trackFlashById(index: number, flash: IFlash) {
         return flash.id;
     }
+
+    handleToggleCard(id: number) {
+        const flash = this.flashs.find(f => f.id === id);
+        flash.show = !flash.show;
+    }
 }
