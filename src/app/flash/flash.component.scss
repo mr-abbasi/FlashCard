@@ -1,3 +1,5 @@
+$card-header-title-color: #fff;
+
 .card {
   width: 300px;
   display: inline-block;
@@ -5,5 +7,21 @@
 
   .card-header {
     cursor: pointer;
+
+    &.correct {
+      background: #51be51;
+
+      .card-header-title {
+        color: $card-header-title-color;
+      }
+    }
+
+    &.incorrect {
+      background: red;
+
+      .card-header-title {
+        color: $card-header-title-color;
+      }
+    }
   }
 }
